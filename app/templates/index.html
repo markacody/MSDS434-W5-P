@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Data Engineering Helper</title>
+<H1>Data Engineering Helper</H1>
+<h3>All available routes</h3>
+<dl>
+      {% for key, value in routes.items() %}
+            <dt><a href="{{ key }}">{{ key }}</a></dt>
+            <dd>{{ value }}</dd>
+      {% endfor %}
+</dl>
